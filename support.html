@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Quan Am Temple</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <div class="container">
+            <img class="header__logo" src="images/header.jpg" alt="buddha image">
+            <h1 class="header__title">Quan Am Temple</h1>
+            <a id="menu" class="header__menu">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+                </svg>
+            </a>
+            </div>
+        </div>
+    </header>
+
+    <nav id="drawer" class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="index.html">Home</a></li>
+            <li class="nav__item"><a href="about.html">About</a></li>
+            <li class="nav__item"><a href="meditation.html">Meditation</a></li>
+            <li class="nav__item"><a href="buddhism.html">Buddhism</a></li>
+            <li class="nav__item nav_active"><a href="support.html">Support</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="w3-row">
+            <div class="w3-card-2 w3-col"><div class="crd-hd">Quan Am Temple T-Shirt</div>
+                <img style="padding-right:1em; padding-bottom:1em; float:left; cursor:zoom-in" src="http://quanamtemple.org/data/storage/attachments/4fefb8326c1e04d4c8ec1b3cdf3e4304.jpg" onclick="document.getElementById('modal01').style.display='block'"></img>
+                <div id="modal01" class="w3-modal w3-center" style="overflow:visible;padding:0" onclick="this.style.display='none'"><img class="w3-modal-content w3-animate-zoom" src="http://quanamtemple.org/data/storage/attachments/2a9268f53d8440aa44b0050a170e40b2.jpg" style="height:100%;width:auto"></div>
+                <p>This is a locally printed, high quality, tan colored T-shirt featuring an illustration of a hand holding a lotus flower. Text reads, "Quan Am Buddhist Temple, Mason, MI"  These are a unisex standard fit T-shirt available in Small through XL, plus sizes available for an additional charge. Your order will ship when payment has been received.<p style="clear:left;">Artwork by Paul Vetne  See: www.paulvetne.com<p>Color<p>Apparel size    S / M / L / XL<p>Price  $ 20.00
+            </div>
+
+            <div class="w3-card-2 w3-col">In 2004, the Vietnamese Zen Buddhist Community at Quan Am Temple just south of Lansing opened their doors and encouraged English-speaking neighbors and friends to come practice at their lovely temple.<p>The property was purchased in 2003.  It was a plumbing warehouse, and the Vietnamese community rallied dozens of volunteers to transform the building into a beautiful meditation hall.   Lush gardens surround the temple, and stunning Buddha figures were imported from Vietnam and also grace the grounds.<p>Over the past ten years, hundreds of guests and new members have come to the temple.   People of all faith traditions are warmly welcomed.  Together as a community, we meditated together and  gathered around as we discussed ways of transforming difficulty, negative emotions, and suffering.<p>The leading spiritual director of the temple, Venerable Sakya Ming Quang, said we need not make any financial contribution, that our presence was contribution enough.   However, now the temple has met with tough times financially.<p>The winter of 2013/2014 was brutal.  Ice dams built up under the temple floor, and the wood floors buckled.   Record low temperatures also cracked the driveway and parking lot, and costs to heat the temple skyrocketed.   The insurance company processed the claims, but terminated coverage, thus requiring the temple leaders to pay extremely high rates to find a new company willing to offer coverage.<p>For the past ten years, the Vietnamese Zen Buddhists generously opened their doors and encouraged all members of the community, regardless of their faith affiliations,  to come practice together.  Their kindness has supported many to find solace, friendship, wisdom, and compassion, and to cultivate these qualities together week after week after week for ten years.<p>The $25,000 costs to make the repairs, far exceed the amount its current members can generate from out-of-pocket donations.  So, with our backs against the wall and these bills weighing heavy, we are reaching out to friends, neighbors, and the wider community to ask for donations to help us make the repairs and assure that this wonderful temple can continue to be a meeting place for people who wish to end suffering in their lives, and to cultivate compassion and loving-kindness for themselves and others.<p><a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=EwuXKAs6_K1VGzIPIkO9KEDYFX83hoKEwf2VkVhiJ1BeZSc18ol-2bJiGl4&dispatch=5885d80a13c0db1f8e263663d3faee8defcd6970d4fd9d661117ac2649af92bb" text-align="center" target="_blank">Make a Donation</a><p>With deep gratitude from Quan Am Temple.</div>
+        </div>
+    </section>
+
+    <footer>
+        <p><a href="https://goo.gl/maps/TYetvrBcVYy" target="_blank">1840 N College Rd, Mason MI</a></p>
+        <p>(517) 347-1655 or (517) 853-1675</p>
+        <p><a href="mailto:quanamtemplemi@gmail.com" target="blank">quanamtemplemi@gmail.com</a></p>
+    </footer>
+
+    <script>
+        /*
+        * Open the drawer when the menu icon is clicked.
+        */
+        var menu = document.querySelector('#menu');
+        var main = document.querySelector('main');
+        var drawer = document.querySelector('.nav');
+
+        menu.addEventListener('click', function(e) {
+            drawer.classList.toggle('open');
+            e.stopPropagation();
+        });
+        main.addEventListener('click', function() {
+            drawer.classList.remove('open');
+        });
+
+        function myFunction(id) {
+            document.getElementById(id).classList.toggle("w3-show");
+        }
+    </script>
+</body>
+</html>

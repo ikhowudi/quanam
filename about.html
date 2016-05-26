@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Quan Am Temple</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <div class="container">
+            <img class="header__logo" src="images/header.jpg" alt="buddha image">
+            <h1 class="header__title">Quan Am Temple</h1>
+            <a id="menu" class="header__menu">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+                </svg>
+            </a>
+            </div>
+        </div>
+    </header>
+
+    <nav id="drawer" class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="index.html">Home</a></li>
+            <li class="nav__item nav_active"><a href="about.html">About</a></li>
+            <li class="nav__item"><a href="meditation.html">Meditation</a></li>
+            <li class="nav__item"><a href="buddhism.html">Buddhism</a></li>
+            <li class="nav__item"><a href="support.html">Support</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="w3-row">
+            <div class="w3-card-2 w3-half"><div class="crd-hd">Pictures</div>
+
+                <img style="width:100%; cursor:zoom-in" src="http://placehold.it/350x160" onclick="document.getElementById('modal01').style.display='block'"></img>
+
+                <div id="modal01" class="w3-modal w3-center" style="overflow:visible;padding:0" onclick="this.style.display='none'"><img class="w3-modal-content w3-animate-zoom" src="http://placehold.it/350x160" style="width:90%;margin-top:3%"></div>
+            </div>
+
+            <div class="w3-card-2 hover w3-half" onclick="myFunction('hide2')"><div class="crd-hd">Teacher ▾</div>The temple belongs to the Vietnamese community and the members have been very kind to allow us to meet on Thursday evenings at their temple. Even though all services provided are free, donations are welcome. The Venerable Sakya Mihn Quang, a Vietnamese monk, whom we refer to as Thay (which means “teacher” in Vietnamese) is in Japan at present where he is pursuing his doctoral degree in Religious Studies. He was with us from 2004-2010 and was an excellent and  compassionate teacher.<div id="hide2" class="w3-hide"><p>When he left, we told him we would miss him and he said, “I am not taking the Dharma (the teachings of the Buddha) with me.” Our teacher insisted that we should carry on meeting to meditate and study Buddhism. Even when he was with us, our teacher never called himself our teacher or referred to himself as the leader of the group. He always said, “We are all Dharma friends here and we learn from each other. I learn from you and you learn from me. There is no leader here. Whatever we do, we do selflessly—that means, without any sense of self.” One of the greatest ways of making merit, and one of the greatest acts of generosity, in Buddhism is sharing the Dharma. So, even though we do not have a teacher, we still meet and learn from each other; we still come and share the Dharma.<p>Most of the people who come to our Thursday meetings are Americans. Not all members are Buddhist, and we have people from different faiths and all walks of life. We try to keep the atmosphere as democratic as possible. Even though particular members may take on the role of timekeeper or meditation instructor or Dharma coordinator and so on, there is an understanding that no one is a leader or in charge of the group.<p>Among the folks who come, most know how to meditate. However, we are willing to provide simple instructions to people who have never meditated before.<p>As for the discussions on Buddhism, most of us are learners and we learn from each other and from the texts we are reading. People are very respectful towards each other as we reflect on what is meaningful in the reading and how it relates to our daily lives. People are nice, kind, and friendly and we try our best to practice what we are studying.<p>Whenever we mentioned the Sutras (Buddhist scriptures containing the Buddha’s teachings), our teacher always pointed to his heart and said, “Study this sutra first,” meaning that the goal of our practice is to get to know ourselves. As we continue our journey, we invite you to join us.</div>
+            </div>
+
+            <div class="w3-card-2 hover w3-half" onclick="myFunction('hide1')"><div class="crd-hd">Temple History ▾</div>In 2004, the Vietnamese Zen Buddhist Community at Quan Am Temple just south of Lansing opened their doors and encouraged English-speaking neighbors and friends to come practice at their lovely temple.<div id="hide1" class="w3-hide"><p>The property was purchased in 2003.  It was a plumbing warehouse, and the Vietnamese community rallied dozens of volunteers to transform the building into a beautiful meditation hall.   Lush gardens surround the temple, and stunning Buddha figures were imported from Vietnam and also grace the grounds.<p>Over the past ten years, hundreds of guests and new members have come to the temple.   People of all faith traditions are warmly welcomed.  Together as a community, we meditate together and  gather around as we discuss ways of transforming difficulty, negative emotions, and suffering.</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p><a href="https://goo.gl/maps/TYetvrBcVYy" target="_blank">1840 N College Rd, Mason MI</a></p>
+        <p>(517) 347-1655 or (517) 853-1675</p>
+        <p><a href="mailto:quanamtemplemi@gmail.com" target="blank">quanamtemplemi@gmail.com</a></p>
+    </footer>
+
+    <script>
+        /*
+        * Open the drawer when the menu icon is clicked.
+        */
+        var menu = document.querySelector('#menu');
+        var main = document.querySelector('main');
+        var drawer = document.querySelector('.nav');
+
+        menu.addEventListener('click', function(e) {
+            drawer.classList.toggle('open');
+            e.stopPropagation();
+        });
+        main.addEventListener('click', function() {
+            drawer.classList.remove('open');
+        });
+
+        function myFunction(id) {
+            document.getElementById(id).classList.toggle("w3-show");
+        }
+    </script>
+</body>
+</html>

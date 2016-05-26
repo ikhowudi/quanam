@@ -1,0 +1,202 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Roboto;
+  font-size: 12px;
+  background-color: #722626;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+header, nav, footer, section, article, div {
+  box-sizing: border-box;
+}
+
+/*.mySvg {
+  background: url(https://openclipart.org/download/221116/Lotus-Flower.svg);
+  width: 100%;
+  fill: black;
+  background-repeat: no-repeat;
+  background-position: top;
+}*/
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ol {
+  padding-left: 1em;
+}
+
+/*
+ *
+ * Header
+ *
+ */
+
+.header {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  min-height: 56px;
+  transition: min-height 0.3s;
+  background-color: #15100C;
+  position: relative;
+}
+
+.header__inner {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__logo {
+  height: 100%;
+  vertical-align: top;
+}
+
+.header__title {
+  font-weight: 300;
+  font-size: 48px;
+  padding: 0 0.25em;
+  display: inline-block;
+  color: white;
+}
+
+
+/*
+ *
+ * Top Level Navigation
+ *
+ */
+.nav {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
+}
+
+.nav__list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #4d4d33;
+}
+
+.nav__item {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 19%;
+  text-align: center;
+  line-height: 24px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  text-transform: uppercase;
+ }
+
+.nav_item ul {
+  display: none;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #CFD8DC;
+  font-size: 1.2em;
+}
+
+.nav_active a {
+  border-bottom: 4px solid #CFD8DC;
+  padding: .2em;
+}
+
+.nav a:hover {
+  text-decoration: none;
+  border-bottom: 4px solid #CFD8DC;
+  padding: .2em;
+  transition: .2s;
+}
+
+
+/*
+ *
+ * Main
+ *
+ */
+section {
+  font-size: 1.2em;
+  color: #333;
+  padding: 1em;
+  text-decoration: none;
+  /*position: relative;*/
+  /*opacity: 0.97;*/
+  background-color: #d6d6c2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.w3-col {
+  padding: 1em;
+  background-color: #ececdb;
+  float: left;
+  margin: .5em;
+  padding: 1em;
+  width: calc(100% - 1em);
+}
+
+.w3-half {
+  float: left;
+  width: calc(50% - 1em);
+  margin: .5em;
+  padding: 1em;
+  background-color: #ececdb;
+}
+
+.hover:hover {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19) !important;
+}
+
+.crd-hd {
+  margin-top: -1em;
+  margin-left: -1em;
+  margin-right: -1em;
+  padding: .5em;
+  margin-bottom: 1em;
+  background-color: rgba(77, 77, 51, 0.6);
+  color: white;
+  font-size: h3;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+
+/*
+ *
+ * Footer
+ *
+ */
+
+footer {
+  padding: 1em;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  color: #9E7E7E;
+}
+
+footer a {
+  text-decoration: none;
+  color: #9E7E7E;
+}
+
+footer p {
+  margin: 0.5em;
+}

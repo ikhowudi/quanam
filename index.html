@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Quan Am Temple</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <div class="container">
+            <img class="header__logo" src="images/header.jpg" alt="buddha image">
+            <h1 class="header__title">Quan Am Temple</h1>
+            <a id="menu" class="header__menu">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+                </svg>
+            </a>
+            </div>
+        </div>
+    </header>
+
+    <nav id="drawer" class="nav">
+        <ul class="nav__list">
+            <li class="nav__item nav_active"><a href="index.html">Home</a></li>
+            <li class="nav__item"><a href="about.html">About</a></li>
+            <li class="nav__item"><a href="meditation.html">Meditation</a></li>
+            <li class="nav__item"><a href="buddhism.html">Buddhism</a></li>
+            <li class="nav__item"><a href="support.html">Support</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="w3-row">
+            <div class="w3-card-2 w3-half"><div class="crd-hd">Welcome</div>Hello newcomers to Quan Am Temple! On behalf of the temple and the Thursday Evening Meditation and Discussion Group, we would like to extend a warm welcome to you.</div>
+
+            <div class="w3-card-2 hover w3-half" onclick="myFunction('hide2')"><div class="crd-hd">Thursday Meditation Group ▾</div><p><strong>Thursdays from 7:00 - 8:30pm<br>7:00 - 7:30: Sitting Meditation<br>7:30 - 7:45: Walking Meditation<br>7:45 - 8:30: Group Reading and Discussion</strong></p><div id="hide2" class="w3-hide"><p>If you are coming in the cold season, make sure you are very warmly dressed.<p>Please park in the parking lot and enter the building closest to the lot.<p>As you enter the building on the side through the sliding glass doors, you will see shoe racks. Please take off your shoes. If you have any problems walking without shoes, you can bring your home slippers and wear them inside the temple. If there are any other concerns regarding this issue, please speak to one of the regular members at the temple or call one of the members whose contact number has been provided.<p>In the Meditation Hall, you will find chairs and cushions. Please choose whichever is most suitable to you and make yourself as comfortable as possible.<p>If you know how to meditate, please use your method of meditation when the group is meditating. If you do not know how to meditate, there are two options: please call us ahead of time and make arrangements so one of us can instruct you in the basics of meditation or visit the page on this website which provides basic instructions. When you come for the first time, it will be helpful if you have some idea about what to do when everyone is meditating. Later, we can go into more details regarding meditation if you are interested.<p>From 7:00 p.m.-7:30 p.m., the group will participate in sitting meditation. At present, our teacher is away and we do not have anyone to instruct us or provide guided meditation while we are sitting.<p>At 7:30 p.m., the timekeeper will sound the bell to signify the end of sitting meditation. After a brief period of stretching, we will stand up and then start walking meditation. We will circle the hall three times and this could take from 15-20 minutes.<p>At the end of walking meditation, we bow to the Buddha once and then turn to each other and bow to each other.<p>Next, while maintaining silence, we arrange our chairs and cushions to form a circle so we can discuss some Buddhist text.<p>We often read as a group, but there is no pressure to read or to participate in the discussion. Some people just prefer not to read when their turn comes, and some people just like to listen and not speak when we are discussing.<p>We try to end at 8:30 p.m. but sometimes the discussion runs over. If you must leave at 8:30 sharp, please leave quietly even if the discussion is still going on.<p>At the end of the discussion, we bow three times to the Buddha before going home. (Please note that when we bow to the Buddha image, we are not bowing to a human being or the historical Buddha or God. The word “Buddha” means “the Awakened One,” and we are bowing to the Buddha in us. We all have the ability to wake up as the historical Buddha did, and we are bowing to that potential in us.)</p></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p><a href="https://goo.gl/maps/TYetvrBcVYy" target="_blank">1840 N College Rd, Mason MI</a></p>
+        <p>(517) 347-1655 or (517) 853-1675</p>
+        <p><a href="mailto:quanamtemplemi@gmail.com" target="blank">quanamtemplemi@gmail.com</a></p>
+    </footer>
+
+    <script>
+        /*
+        * Open the drawer when the menu icon is clicked.
+        */
+        var menu = document.querySelector('#menu');
+        var main = document.querySelector('main');
+        var drawer = document.querySelector('.nav');
+
+        menu.addEventListener('click', function(e) {
+            drawer.classList.toggle('open');
+            e.stopPropagation();
+        });
+        main.addEventListener('click', function() {
+            drawer.classList.remove('open');
+        });
+
+        function myFunction(id) {
+            document.getElementById(id).classList.toggle("w3-show");
+        }
+    </script>
+</body>
+</html>
